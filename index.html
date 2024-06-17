@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - birincil meta etiketler
+  -->
+  <title>ÖZTOPRAK - Şaşırtıcı ve Lezzetli Yemekler</title>
+  <meta name="title" content="oztoprak - Amazing & Delicious Food">
+  <meta name="description" content="This is a Restaurant html template made by abdulkadiroztoprak">
+
+  <!-- 
+    - site simgesi
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - görselleri önceden yükle
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER -- #ÖN YÜKLEYİCİ
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">ÖZTOPRAK</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR--ÜST ÇUBUK
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Restaurant, Kayseri Meydan Sivas Bulvarı Cad. /TR
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Günlük : 8.00 İle 20.00 </span>
+      </div>
+
+      <a href="tel:+11234567890" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+90 435 456 7890</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:oztoprak@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">oztoprak@restaurant.com</span>
+      </a>
+
+    </div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER-BAŞ KISIM
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Oztoprak - Anasayfa">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" width="160" height="50" alt="Oztoprak - Anasayfa">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Anasayfa</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menu</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Hakkımızda</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Şeflerimiz</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">İletişim</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Bizi Ziyaret Etmelisiniz.</p>
+
+          <address class="body-4">
+            Restaurant, Kayseri Meydan Sivas Bulvarı Cad. <br>
+            /TR
+          </address>
+
+          <p class="body-4 navbar-text">Günlük : 8.00 İle 20.00</p>
+
+          <a href="mailto:oztoprak@restorant.com" class="body-4 sidebar-link">oztoprak@restorant.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Rezervasyon Talepleri İçin Arayınız :</p>
+
+          <a href="tel:+90 435 456 7890" class="body-1 contact-number hover-underline">
+            +90 435 456 7890
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#" class="btn btn-secondary">
+        <span class="text text-1">Masa Rezervasyon</span>
+
+        <span class="text text-2" aria-hidden="true">Masa Rezervasyon</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">GELENEKSEL VE HİJYEN</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Lezzetli yemek aşkına <br>
+
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Ailenizle gelin ve ağız sulandıran yemeklerin keyfini hissedin
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Menümüzü İnceleyin</span>
+
+              <span class="text text-2" aria-hidden="true">Menümüzü İnceleyin</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Keyifli Deneyim</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              İlham Veren Lezzetler
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Ailenizle gelin ve ağız sulandıran yemeklerin keyfini hissedin
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Menümüzü İnceleyin</span>
+
+              <span class="text text-2" aria-hidden="true">Menümüzü İnceleyin</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">Muhteşem ve Lezzetli</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Her lezzetin olduğu yer <br>
+              bir hikaye anlatır
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+
+              Ailenizle gelin ve ağız sulandıran yemeklerin keyfini hissedin
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Menümüzü İnceleyin</span>
+
+              <span class="text text-2" aria-hidden="true">Menümüzü İnceleyin</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#" class="hero-btn has-after">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span"> Masa rezervasyonu</span>
+        </a>
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #HAKKINDA
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Bizim Hikayemiz</p>
+
+            <h2 class="headline-1 section-title">Her Lezzet Bir Hikaye Anlatır</h2>
+
+            <p class="section-text">
+              Eski bir dükkanı görüp içinde bir lokanta açma fikri doğdu. Annemden öğrendiğim tariflerle birleştirdiğim
+              lezzetli yemeklerimi paylaşmanın heyecanıyla dükkanı açtım. İlk zorluklarla karşılaşsam da kararlılığımla
+              üstesinden geldim. Şimdi, "ÖZTOPRAK" adlı lokantam mahalledeki favori mekanlardan biri oldu. Bu maceraya
+              atılmaktan hiç pişman değilim.
+            </p>
+
+            <div class="contact-label">Rezersasyon İçin Arayınız : </div>
+
+            <a href="tel:+90 435 456 7890" class="body-1 contact-number hover-underline">+90 435 456 7890</a>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1"> </span>
+
+              <span class="text text-2" aria-hidden="true">Dahası</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+            <div class="abs-img abs-img-2 has-before">
+              <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+            </div>
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SPECIAL DISH  --  ÖZEL YEMEK
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy" alt="special dish"
+            class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">Şefimizin Speciali </p>
+
+            <h2 class="headline-1 section-title">Istakoz Tortellini</h2>
+
+            <p class="section-text">
+              İster eşinizi etkilemek ister unutulmaz bir akşam yemeği partisine ev sahipliği yapmak istiyor olun, bu
+              güzel lezzetin en büyük iştahınızı bile tatmin edeceği ve konuklarınızın sayısız övgüsünü alacağı
+              garantidir.
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">1280TL</del>
+
+              <span class="span body-1">700TL</span>
+            </div>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Bütün Menu</span>
+
+              <span class="text text-2" aria-hidden="true">Bütün Menu</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">ÖZEL SEÇİMLER</p>
+
+          <h2 class="headline-1 section-title text-center">LEZZET ŞÖLENİ</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt=" Çoban Salat"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Çoban Salatası</a>
+                    </h3>
+
+                    <span class="badge label-1">Mevsimsel</span>
+
+                    <span class="span title-2">150.00TL</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Domates, yeşil biber, dilimlenmiş salatalık soğanı mevsim yeşillikleri içeir.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Kayseri Mantısı"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Kayseri Mantısı</a>
+                    </h3>
+
+                    <span class="span title-2">500.00TL</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Bir kaşığa 40 tane mantı sığan, etli hamurun üstüne yoğurt ve sos dökülüp yenilir afiyet olsun.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy"
+                    alt="Butternut Margarita Pizza" class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Margarita Pizza</a>
+                    </h3>
+
+                    <span class="span title-2">1350.00TL/span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Mozzarella peyniri ve fesleğen ile hazırlanan bu margarita pizza, İngiltere Kraliçesi Margarita'ya
+                    özel olarak tasarlanmış ve sonradan dünyaya yayılmıştır.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Panna Cotta"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Panna Cotta</a>
+                    </h3>
+
+                    <span class="badge label-1">Harika Hafif Bir Tatlı</span>
+
+                    <span class="span title-2">390.00TL</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Yalnızca 5 malzemeden oluşan panna cotta, 20 dakika gibi kısa bir sürede hazırlanır. Mevsim
+                    meyveleriyle süslenir.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Ramen"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Ramen</a>
+                    </h3>
+
+                    <span class="span title-2">3000.00TL</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Uzakdoğu ülkelerinin en popüler tariflerinden biri olan ramen, tavuk, soya sosu ve zencefil ile
+                    hazırlanır.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Sushi"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Sushi</a>
+                    </h3>
+
+                    <span class="span title-2">600.00TL</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Somon, levrek, ton balığı gibi balık çeşitleriyle hazırlanan sushi, pirinç ile zenginleştirilir.
+                    Suşinin dışı yosun ile sarılır ve rulo haline getirilir.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            Kış aylarında her gün <span class="span">19:00 </span> - <span class="span">21:00</span>
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">Bütün Menü</span>
+
+            <span class="text text-2" aria-hidden="true">Bütün Menü</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS -- GÖRÜŞLER
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p class="headline-2 testi-text">
+            Müthiş bir deneyimdi! Lokantanın atmosferi sıcak ve davetkar, yemeğin lezzeti ise benzersizdi. Her bir
+            lokma, ustalıkla hazırlanmış gibi hissettirdi ve damaklarımda unutulmaz bir tat bıraktı. Servis mükemmeldi,
+            personel dostça ve yardımseverdi. Gerçekten bu lezzetli yolculuk beni büyüledi. Tek kelimeyle muhteşemdi!
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.png " width="100" height="100" loading="lazy"
+              alt="Mehmet Uraz BEYOĞLU" class="img">
+
+            <p class="label-2 profile-name">Mahsun KARACA</p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION - REZERVASYON
+      -->
+
+      <section class="reservation">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="" class="form-left">
+
+              <h2 class="headline-1 text-center">Çevrimiçi Rezersasyon</h2>
+
+              <p class="form-text text-center">
+                Rezervasyon talebi <a href="tel:+90 435 456 7890" class="link">+90 435 456 7890</a>
+                veya sipariş formunu doldurun.
+              </p>
+
+              <div class="input-wrapper">
+                <input type="text" name="name" placeholder="Adınız" autocomplete="off" class="input-field">
+
+                <input type="tel" name="phone" placeholder="Telefon Numaranız" autocomplete="off" class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="1-person">1 Kişi</option>
+                    <option value="2-person">2 Kişi</option>
+                    <option value="3-person">3 Kişi</option>
+                    <option value="4-person">4 Kişi</option>
+                    <option value="5-person">5 Kişi</option>
+                    <option value="6-person">6 Kişi</option>
+                    <option value="7-person">7 Kişi</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="person" class="input-field">
+                    <option value="08:00">08 : 00 </option>
+                    <option value="09:00">09 : 00 </option>
+                    <option value="10:00">10 : 00 </option>
+                    <option value="11:00">11 : 00 </option>
+                    <option value="12:00">12 : 00 </option>
+                    <option value="13:00">13 : 00 </option>
+                    <option value="14:00">14 : 00 </option>
+                    <option value="15:00">15 : 00 </option>
+                    <option value="16:00">16 : 00 </option>
+                    <option value="17:00">17 : 00 </option>
+                    <option value="18:00">18 : 00 </option>
+                    <option value="19:00">19 : 00 </option>
+                    <option value="20:00">20 : 00 </option>
+                    <option value="21:00">21 : 00 </option>
+                    <option value="22:00">22 : 00 </option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="Mesaj" placeholder="Mesaj" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">
+                  Masa Rezervasyonu</span>
+
+                <span class="text text-2" aria-hidden="true"> Masa Rezervasyonu</span>
+              </button>
+
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 class="headline-1 text-center">İletişim</h2>
+
+              <p class="contact-label"></p>
+
+              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+90 435 456 7890 </a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Konum</p>
+
+              <address class="body-4">
+                Restaurant, Kayseri Meydan Sivas Bulvarı Cad. /TR
+              </address>
+
+              <p class="contact-label">Öğle Yemeği Saatleri</p>
+
+              <p class="body-4">
+                Pazartesi - Pazar <br>
+                11.00 - 14.30
+              </p>
+
+              <p class="contact-label">Akşam Yemeği</p>
+
+              <p class="body-4">
+                Pazartesi - Pazar <br>
+                17.00 - 21.00
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+
+      </div>
+
+      </div>
+      </footer>
+
+
+
+
+
+      <!-- 
+    - #BACK TO TOP
+  -->
+
+      <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+        <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+      </a>
+
+
+
+
+
+      <!-- 
+    - custom js link
+  -->
+      <script src="./assets/js/script.js"></script>
+
+      <!-- 
+    - ionicon link
+  -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
